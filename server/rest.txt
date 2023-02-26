@@ -1,0 +1,8 @@
+curl http://localhost:8080/products
+
+curl -X PUT -H 'content-type:application/json'  http://localhost:8080/products -d '{"id":"Rice5KgBag1INTN01","productName":"Rice5KgBag1","countryStoreId":"INTN01","sku":"SKU Value Goes Here","price":2000,"lastFeedDate":"2023-02-25"}'
+
+
+curl -X POST  -H 'content-type:application/json'  http://localhost:8080/products -d '{"productName":"Rice5KgBag1","countryStoreId":"USNY01","sku":"SKU Value Goes Here","price":500,"lastFeedDate":"2023-02-24"}'
+
+curl -X POST   -H 'content-type:application/json'  http://localhost:8080/products/search -d '{"query":{"selectExpression":{"columns":["cspi"]},"fromExpression":{"entity":"CountryStoreProduct csp"},"whereExpression":{"range":{"from":"1000","to":"2000","field":"price"}}}}'

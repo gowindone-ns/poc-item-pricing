@@ -1,0 +1,5 @@
+hibernate.dialect=PostgreSQL
+hibernate.connection.driver_class=org.postgresql.Driver
+hibernate.connection.url=jdbc:postgresql://127.0.0.1:5433/retailstore
+hibernate.connection.username=storeuser1
+hibernate.connection.password=passw0rd

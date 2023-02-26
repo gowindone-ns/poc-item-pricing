@@ -1,0 +1,26 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #c3c3c3;
+    opacity: 0.9;
+}
+.dialog {
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    background-color:#fff;
+}
+.title {
+    height: 10%;
+}
+.content {
+   height: 90%;
+}
